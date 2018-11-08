@@ -9,7 +9,7 @@ client.on('ready', () => {
   });
 
     client.on('message', message => {
-        if (message.content.startWith(prefix + "deleterole")){
+        if (message.content.startWith("$deleterole")){
     if(!message.channel.guild) return;
      message.guild.roles.forEach( roles => {
          
