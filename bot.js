@@ -84,8 +84,8 @@ client.on('ready', () => {
                                                 subChannel.send(subMsg).then(msgS => {
                                                     msgS.react(':white_check_mark: ').then(() => msgS.react(':negative_squared_cross_mark: '))
                                                    
-                                                    let accept = (reaction, user) => reaction.emoji.name === '?'  && user.id === '449498327655120896'
-                                                    let noAccept = (reaction, user) => reaction.emoji.name === '?' && user.id === '449498327655120896'
+                                                    let accept = (reaction, user) => reaction.emoji.name === ':white_check_mark:'  && user.id === '449498327655120896'
+                                                    let noAccept = (reaction, user) => reaction.emoji.name === 'negative_squared_cross_mark:' && user.id === '449498327655120896'
                                                    
                                                     let acceptRe = msgS.createReactionCollector(accept);
                                                     let noAcceptRe = msgS.createReactionCollector(noAccept);
