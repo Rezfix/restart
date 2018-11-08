@@ -58,17 +58,17 @@ client.on('ready', () => {
                                        
                                         msgS.delete();
                                         message.channel.send(embedS).then(msgS => {
-                                            msgS.react(':white_check_mark:').then(() => msgS.react(':negative_squared_cross_mark:'))
+                                            msgS.react('✅').then(() => msgS.react('❎'))
                                            
-                                            let yesSure = (reaction, user) => reaction.emoji.name === ':white_check_mark:'  && user.id === message.author.id;
-                                            let no = (reaction, user) => reaction.emoji.name === ':negative_squared_cross_mark:' && user.id === message.author.id;
+                                            let yesSure = (reaction, user) => reaction.emoji.name === '✅'  && user.id === message.author.id;
+                                            let no = (reaction, user) => reaction.emoji.name === '❎' && user.id === message.author.id;
                                            
                                             let yesSend = msgS.createReactionCollector(yesSure);
                                             let dontSend = msgS.createReactionCollector(no);
                                            
                                             yesSend.on('collect', r => {
                                                 msgS.delete();
-                                                message.channel.send(':white_check_mark: | تم تقديم طلبك بنجاح انتظر النتيجة في روم seller-accpeted').then(msg => msg.delete(5000));
+                                                message.channel.send('✅ | تم تقديم طلبك بنجاح انتظر النتيجة في روم seller-accpeted').then(msg => msg.delete(5000));
                                                
                                                 let subMsg = new Discord.RichEmbed()
                                                 .setAuthor(message.author.tag, message.author.avatarURL)
@@ -82,30 +82,30 @@ client.on('ready', () => {
                                                 .addField('ايدي حسابه', message.author.id, true)
                                                
                                                 subChannel.send(subMsg).then(msgS => {
-                                                    msgS.react(':white_check_mark: ').then(() => msgS.react(':negative_squared_cross_mark: '))
+                                                    msgS.react('✅').then(() => msgS.react('❎'))
                                                    
-                                                    let accept = (reaction, user) => reaction.emoji.name === ':white_check_mark:'  && user.id === '500640587888984084'
-                                                    let noAccept = (reaction, user) => reaction.emoji.name === ':negative_squared_cross_mark:' && user.id === '500640587888984084'
+                                                    let accept = (reaction, user) => reaction.emoji.name === '✅'  && user.id === '500640587888984084'
+                                                    let noAccept = (reaction, user) => reaction.emoji.name === '❎' && user.id === '500640587888984084'
                                                    
                                                     let acceptRe = msgS.createReactionCollector(accept);
                                                     let noAcceptRe = msgS.createReactionCollector(noAccept);
                                                    
                                                     acceptRe.on('collect', r => {
                                                         msgS.delete();
-                                                        message.author.send(`:white_check_mark: | تم قبولك اداري بسيرفر **${message.guild.name}**`);
+                                                        message.author.send(`✅ | تم قبولك اداري بسيرفر **${message.guild.name}**`);
                                                         message.guild.member(message.author).addRole(modRole.id);
-                                                        message.guild.channels.find(r => r.name === 'seller-accepted').send(`:white_check_mark: | تم قبولك [ <@${message.author.id}> ]`);
+                                                        message.guild.channels.find(r => r.name === 'seller-accepted').send(`✅ | تم قبولك [ <@${message.author.id}> ]`);
                                                     }).catch();
                                                     noAcceptRe.on('collect', r => {
                                                         msgS.delete();
-                                                        message.author.send(`negative_squared_cross_mark: | تم رفضك بسيرفر **${message.guild.name}**`);
-                                                        message.guild.channels.find(r => r.name === 'seller-unacceptable').send(`:x: | تم رفضك [ <@${message.author.id}> ]`);
+                                                        message.author.send(` |❎ تم رفضك بسيرفر **${message.guild.name}**`);
+                                                        message.guild.channels.find(r => r.name === 'seller-unacceptable').send(`❎ | تم رفضك [ <@${message.author.id}> ]`);
                                                     }).catch();
                                                 })
                                             });
                                             dontSend.on('collect', r => {
                                                 msgS.delete();
-                                                message.channel.send(':x: | تم الغاء تقديمك');
+                                                message.channel.send('❎ | تم الغاء تقديمك');
                                             });
                                         })
                                     })
