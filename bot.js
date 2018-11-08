@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+const prefix = "$"
 
 client.on('ready', () => {
     client.user.setGame('Rezfix -help','https://www.twitch.tv/Rezfix');
@@ -7,7 +8,7 @@ client.on('ready', () => {
     console.log(' Bot Is Online')
     console.log('---------------')
   });
-
+var prefix = '
 client.on('message', omar => {
 if(omar.content.split(' ')[0] == prefix + 'dac') {  
 if (!omar.channel.guild) return;
