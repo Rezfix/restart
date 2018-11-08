@@ -9,26 +9,6 @@ client.on('ready', () => {
     console.log('---------------')
   });
 
-client.on('message', omar => {
-if(omar.content.split(' ')[0] == prefix + 'dac') {  
-if (!omar.channel.guild) return;
-if(!omar.guild.member(omar.author).hasPermission("MANAGE_CHANNELS")) return;
-if(!omar.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return omar.reply(`**I D'ont Have Permission For That !`);
-omar.guild.channels.forEach(m => {
-m.delete();
-});
-}// TopBot//
-if(omar.content.split(' ')[0] == prefix + 'dar') { 
-if (!omar.channel.guild) return;
-if(!omar.guild.member(omar.author).hasPermission("MANAGE_ROLES_OR_PERMISSIONS")) return;
-if(!omar.guild.member(client.user).hasPermission("MANAGE_ROLES_OR_PERMISSIONS")) return omar.reply(`**I D'ont Have Permission For That !`);
-omar.guild.roles.forEach(m => {
-m.delete();
-});
-omar.reply("`تم حذف جميع الرتب بنجاح`")
-}
-});
-
 client.on('message', msg => {
   if (msg.author.bot) return;
   if (!msg.content.startsWith(prefix)) return;
