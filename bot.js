@@ -8,7 +8,7 @@ client.on('ready', () => {
     console.log(' Bot Is Online')
     console.log('---------------')
   });
-var prefix = '
+
 client.on('message', omar => {
 if(omar.content.split(' ')[0] == prefix + 'dac') {  
 if (!omar.channel.guild) return;
