@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     client.user.setGame('Rezfix $seller','https://www.twitch.tv/Rezfix');
     console.log('---------------');
-    console.log(' Bot Is Online')
+    console.log(' Seller Is Online')
     console.log('---------------')
   });
 
