@@ -29,4 +29,27 @@ omar.reply("`تم حذف جميع الرتب بنجاح`")
 }
 });
 
+client.on('message', msg => {
+  if (msg.author.bot) return;
+  if (!msg.content.startsWith(prefix)) return;
+  let command = msg.content.split(" ")[0];
+  command = command.slice(prefix.length);
+  let args = msg.content.split(" ").slice(1);
+
+    if(command === "purge") {
+        const emoji = client.emojis.find("name", ":wastebasket:")
+    let textxt = args.slice(0).join("");
+    if(msg.member.hasPermission("MANAGE_MESSAGES")) {
+    if (textxt == "") {
+    msg.channel.send("ضع عددا من الرسائل التي تريد مسحها");
+} else {
+    msg.delete().then
+    msg.delete().then
+    msg.channel.bulkDelete(textxt);
+    msg.channel.send(`${emoji} Deleted ` + "`" + textxt + "` messages");
+        }    
+    }
+}
+});
+
 client.login(process.env.BOT_TOKEN);
