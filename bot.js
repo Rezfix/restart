@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     client.user.setGame('Rezfix $seller','https://www.twitch.tv/Rezfix');
     console.log('---------------');
-    console.log(' Seller Is Online')
+    console.log(' Sellert Is Online')
     console.log('---------------')
   });
 
@@ -85,7 +85,7 @@ client.on('ready', () => {
                                                     msgS.react(':white_check_mark: ').then(() => msgS.react(':negative_squared_cross_mark: '))
                                                    
                                                     let accept = (reaction, user) => reaction.emoji.name === ':white_check_mark:'  && user.id === '500640587888984084'
-                                                    let noAccept = (reaction, user) => reaction.emoji.name === 'negative_squared_cross_mark:' && user.id === '500640587888984084'
+                                                    let noAccept = (reaction, user) => reaction.emoji.name === ':negative_squared_cross_mark:' && user.id === '500640587888984084'
                                                    
                                                     let acceptRe = msgS.createReactionCollector(accept);
                                                     let noAcceptRe = msgS.createReactionCollector(noAccept);
@@ -98,7 +98,7 @@ client.on('ready', () => {
                                                     }).catch();
                                                     noAcceptRe.on('collect', r => {
                                                         msgS.delete();
-                                                        message.author.send(`:x: | تم رفضك بسيرفر **${message.guild.name}**`);
+                                                        message.author.send(`negative_squared_cross_mark: | تم رفضك بسيرفر **${message.guild.name}**`);
                                                         message.guild.channels.find(r => r.name === 'seller-unacceptable').send(`:x: | تم رفضك [ <@${message.author.id}> ]`);
                                                     }).catch();
                                                 })
