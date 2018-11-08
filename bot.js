@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
     client.user.setGame('Rezfix $seller','https://www.twitch.tv/Rezfix');
     console.log('---------------');
-    console.log(' Seller Is Online')
+    console.log(' Sellert Is Online')
     console.log('---------------')
   });
 
@@ -60,8 +60,8 @@ client.on('ready', () => {
                                         message.channel.send(embedS).then(msgS => {
                                             msgS.react(':white_check_mark:').then(() => msgS.react(':negative_squared_cross_mark:'))
                                            
-                                            let yesSure = (reaction, user) => reaction.emoji.name === '?'  && user.id === message.author.id;
-                                            let no = (reaction, user) => reaction.emoji.name === '?' && user.id === message.author.id;
+                                            let yesSure = (reaction, user) => reaction.emoji.name === ':white_check_mark:'  && user.id === message.author.id;
+                                            let no = (reaction, user) => reaction.emoji.name === ':negative_squared_cross_mark:' && user.id === message.author.id;
                                            
                                             let yesSend = msgS.createReactionCollector(yesSure);
                                             let dontSend = msgS.createReactionCollector(no);
