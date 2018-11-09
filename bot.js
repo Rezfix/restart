@@ -39,7 +39,7 @@ client.on('ready', () => {
                             message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] }).then(collected => {
                                 fromwhere = collected.first().content;
                                 collected.first().delete();
-                                msgS.edit(':timer: | **من فضلك اكتب سبب تقديمك على الرتبة والمهارات اللتي لديك لتقديمها**').then(msgS => {
+                                msgS.edit(':timer: | **من فضلك اكتب مبيعاتك  و طريقة الشراء**').then(msgS => {
                                     message.channel.awaitMessages(filter, { max: 1, time: 30000, errors: ['time'] }).then(collected => {
                                         fa2dh = collected.first().content;
                                         collected.first().delete();
@@ -52,7 +52,7 @@ client.on('ready', () => {
                                         .addField('الاسم', name, true)
                                         .addField('العمر', age, true)
                                         .addField('من وين', fromwhere, true)
-                                        .addField('المهارات وسبب التقديم على الرتبة', fa2dh, true)
+                                        .addField('يبيع وطريقة الشراء', fa2dh, true)
                                         .setTimestamp()
                                         .setFooter(message.guild.name, message.guild.iconURL)
                                        
