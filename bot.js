@@ -6,7 +6,7 @@ client.on('ready', () => {
 	// Cmd Sending in Console
 	  console.log('')
 	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-	  console.log('╔ SystemBot ╗')
+	  console.log('╔                            SystemBot                              ╗')
 	  console.log('')
 	  console.log(`[Start] ${new Date()}`)
 	  console.log(`╔[ Logged in as * [ " ${client.user.username} " ] ]?`);
@@ -115,7 +115,6 @@ client.on('message', message => {
 ▪  ${prefix} Colors , لنشاء الوان تقدر تختار اكثر من 100 
 ▪  ${prefix} Bans , عدد الاشخاص المبندين 
 ▪  ${prefix} Role , لاعطاء شخص معين او الكل رتبة 
-▪  ${prefix} Roles , اضهار جميع الرتب 
 ▪  ${prefix} Count , اضهار عدد اعضاء السيرفر
 ▪  ${prefix} Move , لسحب عضو لرومك 
 ▪  ${prefix} Bot , اظهار انفو السيرفر 
@@ -326,21 +325,6 @@ client.on('message', message => {
       })
     }
     });
-
-    client.on('message', message =>{
-
-        if(message.content == "-roles"){
-            var 
-            ros=message.guild.roles.size,
-            data = [['Rank', 'RoleName']]
-            for(let i =0;i<ros;i++){
-                if(message.guild.roles.array()[i].id !== message.guild.id){
-             data.push([i,`${message.guild.roles.filter(r => r.position == ros-i).map(r=>r.name)}`])
-            }}
-      
-            message.channel.send(`**\`\`\`xl\n${res}\`\`\`**`);
-        }
-      });
 
       client.on("message", message => {
         var prefix = "-";
