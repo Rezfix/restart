@@ -1,5 +1,34 @@
 const discord = new require("discord.js");
 const client = new discord.Client();
+
+client.on('ready', () => {
+	// عند بدء البوت راح يرسل السي ام دي هذي الرسايل
+	  console.log('')
+	  console.log('')
+	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+	  console.log(`[Start] ${new Date()}`)
+	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+	  console.log('')
+	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+	  console.log('')
+	  console.log('╔[═════════════════]╗')
+	  console.log(' HaKawi SYSTEM')
+	  console.log('╔[═════════════════]╗')
+	  console.log('')
+	  console.log(`╔[ Logged in as * [ " ${client.user.username} " ] ]?`);
+	  console.log('')
+	  console.log('=[ Informations :]╗')
+	  console.log('')
+	  console.log(`╔[ Servers [ " ${client.guilds.size} " ]╗`);
+	  console.log(`╔[ Users [ " ${client.users.size} " ]╗`);
+	  console.log(`╔[ Channels [ " ${client.channels.size} " ]╗`);
+	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+	  console.log('')
+	  console.log('')
+	  console.log('')
+	  client.user.setActivity('HaKawi SYSTEM')
+	});
+
 var config = {
   events: [
     {type: "CHANNEL_CREATE", logType: "CHANNEL_CREATE", limit: 4 , delay: 5000},
