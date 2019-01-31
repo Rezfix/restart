@@ -6,7 +6,7 @@ client.on('ready', () => {
 	// Cmd Sending in Console
 	  console.log('')
 	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-	  console.log('╔                            SystemBot                              ╗')
+	  console.log('╔ SystemBot ╗')
 	  console.log('')
 	  console.log(`[Start] ${new Date()}`)
 	  console.log(`╔[ Logged in as * [ " ${client.user.username} " ] ]?`);
@@ -98,7 +98,6 @@ client.on('message', message => {
   var prefix = "-";
   if (message.author.bot) return;
    if (message.content === prefix + "helpa") {
-       if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES"))
             
     
          
