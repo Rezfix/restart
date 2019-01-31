@@ -14,7 +14,8 @@ client.on('ready', () => {
 	  console.log(`╔[ Users [ " ${client.users.size} " ]╗`);
 	  console.log(`╔[ Channels [ " ${client.channels.size} " ]╗`);
 	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-	  console.log('')
+      console.log('')
+      client.user.setGame(setGame[i],`https://www.twitch.tv/SystemBot`);
     });
 
     client.on('ready', function(){
