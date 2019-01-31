@@ -6,7 +6,7 @@ client.on('ready', () => {
 	// Cmd Sending in Console
 	  console.log('')
 	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-	  console.log('╔                            SystemBot                              ╗')
+	  console.log('╔ SystemBot ╗')
 	  console.log('')
 	  console.log(`[Start] ${new Date()}`)
 	  console.log(`╔[ Logged in as * [ " ${client.user.username} " ] ]?`);
@@ -109,7 +109,7 @@ client.on('message', message => {
 ╭                                           ╮
     Administrative Orders 
 ╰                                           ╯    **
-``
+
 ▪  ${prefix} Kick , @BLÙTÌČK.♪#0001  [Reason]
 ▪  ${prefix} Ban , @BLÙTÌČK.♪#0001  [Reason]
 ▪  ${prefix} Colors , لنشاء الوان تقدر تختار اكثر من 100 
@@ -120,7 +120,7 @@ client.on('message', message => {
 ▪  ${prefix} Move , لسحب عضو لرومك 
 ▪  ${prefix} Bot , اظهار انفو السيرفر 
 ▪  ${prefix} Server , اظهار انفو خاصة 
-``
+
 
 **• This Bot Created By @! Tune | BLÙTÌČK.♪#0001 **
 
@@ -143,7 +143,7 @@ client.on('message', message => {
   ╭                                           ╮
       Administrative Orders 
   ╰                                           ╯    **
-  ``
+  
   ▪  ${prefix} Kick , @BLÙTÌČK.♪#0001  [Reason]
   ▪  ${prefix} Ban , @BLÙTÌČK.♪#0001  [Reason]
   ▪  ${prefix} Colors , لنشاء الوان تقدر تختار اكثر من 100 
@@ -154,7 +154,7 @@ client.on('message', message => {
   ▪  ${prefix} Move , لسحب عضو لرومك 
   ▪  ${prefix} Bot , اظهار انفو السيرفر 
   ▪  ${prefix} Server , اظهار انفو خاصة 
-  ``
+  
   
   **• This Bot Created By @! Tune | BLÙTÌČK.♪#0001 **
   
