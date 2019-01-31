@@ -238,16 +238,6 @@ https://discord.gg/RHnJy79
       });
 
       client.on('message', message => {
-        if(message.content.includes('discord.gg')){
-                                                if(!message.channel.guild) return message.reply('**▪ ممنوع نشر روابط سيرفرات , ** :X_: ');
-            if (!message.member.hasPermissions(['ADMINISTRATOR'])){
-            message.delete()
-        return message.reply(`**▪ ممنوع نشر روابط سيرفرات , ** :X_: `)
-        }
-      }
-      });
-
-      client.on('message', message => {
         if (message.content.startsWith("-bans")) {
             message.guild.fetchBans()
             .then(bans => message.channel.send(`${bans.size}** ▪ عدد الاشخصار المبندين من السيرفر , :link:  ** `))
