@@ -17,25 +17,6 @@ client.on('ready', () => {
       console.log('')
       client.user.setGame(setGame[i],`https://www.twitch.tv/SystemBot`);
     });
-
-    client.on('ready', function(){
-        client.user.setStatus("dnd");
-        var ms = 100000 ;
-        var setGame = [`-help | SystemBot`];
-        var i = -1;
-        var j = 0;
-        setInterval(function (){
-            if( i == -1 ){
-                j = 1;
-            }
-            if( i == (setGame.length)-1 ){
-                j = -1;
-            }
-            i = i+j;
-            client.user.setGame(setGame[i],`https://www.twitch.tv/SystemBot`);
-        }, ms);100000
-    
-    });
     
 //حماية | Protacte
 var config = {
