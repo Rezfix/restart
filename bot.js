@@ -111,6 +111,8 @@ client.on('message', message => {
 
 ▪  ${prefix} Kick , @BLÙTÌČK.♪#0001  [Reason]
 ▪  ${prefix} Ban , @BLÙTÌČK.♪#0001  [Reason]
+▪  ${prefix} Mute, @BLÙTÌČK.♪#0001  [Reason]
+▪  ${prefix} Unmute , @BLÙTÌČK.♪#0001 
 ▪  ${prefix} Colors , لنشاء الوان تقدر تختار اكثر من 100 
 ▪  ${prefix} Bans , عدد الاشخاص المبندين 
 ▪  ${prefix} Role , لاعطاء شخص معين او الكل رتبة 
@@ -118,9 +120,15 @@ client.on('message', message => {
 ▪  ${prefix} Move , لسحب عضو لرومك 
 ▪  ${prefix} Bot , اظهار انفو السيرفر 
 ▪  ${prefix} Server , اظهار انفو خاصة 
+▪  ${prefix} BC , برود كاست امبد
+▪  ${prefix} Giveaway . قيف اواي 
+▪  ${prefix} Ban , @BLÙTÌČK.♪#0001  [Reason]
 
+▪  ${prefix} Inv , دعوت البوت الى سيرفرك ,
+**• This Bot Created By @! Tune | BLÙTÌČK.♪#0001 
+https://discord.gg/RHnJy79
+**
 
-**• This Bot Created By @! Tune | BLÙTÌČK.♪#0001 **
 
 
 
@@ -137,24 +145,21 @@ client.on('message', message => {
   
    message.author.sendMessage(`
   
-  **▸ System Bot , For Help
-  ╭                                           ╮
-      Administrative Orders 
-  ╰                                           ╯    **
-  
-  ▪  ${prefix} Kick , @BLÙTÌČK.♪#0001  [Reason]
-  ▪  ${prefix} Ban , @BLÙTÌČK.♪#0001  [Reason]
-  ▪  ${prefix} Colors , لنشاء الوان تقدر تختار اكثر من 100 
-  ▪  ${prefix} Bans , عدد الاشخاص المبندين 
-  ▪  ${prefix} Role , لاعطاء شخص معين او الكل رتبة 
-  ▪  ${prefix} Roles , اضهار جميع الرتب 
-  ▪  ${prefix} Count , اضهار عدد اعضاء السيرفر
-  ▪  ${prefix} Move , لسحب عضو لرومك 
-  ▪  ${prefix} Bot , اظهار انفو السيرفر 
-  ▪  ${prefix} Server , اظهار انفو خاصة 
-  
-  
-  **• This Bot Created By @! Tune | BLÙTÌČK.♪#0001 **
+**▸ System Bot , For Help
+╭                                           ╮
+          Players  Orders 
+╰                                           ╯    **
+
+▪  ${prefix} new , لنشاء تذكرة 
+▪  ${prefix} count , عدد الاعضاء في السيرفر 
+▪  ${prefix} رابط , Link The Server
+▪  ${prefix} Report , ابلاغ عن شخص اداري او غير 
+▪  ${prefix} Ping , لأظهار عدد البنق 
+
+▪  ${prefix} Inv , لاضافة البوت الى سيرفرك 
+**• This Bot Created By @! Tune | BLÙTÌČK.♪#0001 
+https://discord.gg/RHnJy79
+**
   
   
   
