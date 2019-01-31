@@ -8,7 +8,7 @@ client.on('ready', () => {
 	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
 	  console.log('╔                           SystemBot                               ╗')
 	  console.log('')
-	  console.log('╔ Best Bot in 2019 and 2030 ╗')
+	  console.log('╔ Best Bot in 2019 and 2040 ╗')
 	  console.log(`[Start] ${new Date()}`)
 	  console.log(`╔[ Logged in as * [ " ${client.user.username} " ] ]?`);
 	  console.log(`╔[ Servers [ " ${client.guilds.size} " ]╗`);
