@@ -16,7 +16,7 @@ client.on('ready', () => {
 	  console.log(`╔[ Channels [ " ${client.channels.size} " ]╗`);
 	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
       console.log('')
-      client.user.setGame(setGame[i],`https://www.twitch.tv/SystemBot`);
+      client.user.setGame('-help | SystemBot',`https://www.twitch.tv/SystemBot`);
     });
     
 //حماية | Protacte
