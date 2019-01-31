@@ -6,7 +6,7 @@ client.on('ready', () => {
 	// Cmd Sending in Console
 	  console.log('')
 	  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-	  console.log('╔ SystemBot ╗')
+	  console.log('╔                            SystemBot                              ╗')
 	  console.log('')
 	  console.log(`[Start] ${new Date()}`)
 	  console.log(`╔[ Logged in as * [ " ${client.user.username} " ] ]?`);
@@ -103,7 +103,7 @@ client.on('message', message => {
     
          
  message.author.sendMessage(`
-** 
+
 
 **▸ System Bot , For Help
 ╭                                           ╮
@@ -138,7 +138,6 @@ client.on('message', message => {
               
   
    message.author.sendMessage(`
-  ** 
   
   **▸ System Bot , For Help
   ╭                                           ╮
